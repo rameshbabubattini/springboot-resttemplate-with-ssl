@@ -1,0 +1,12 @@
+server:
+  port: 9090
+  
+sampleserver:
+  url: https://localhost:8443/
+
+app:
+  key-alias: sampleserver
+  key-password: changeit
+  key-store: sampleclient.truststore
+  key-store-password: changeit
+  key-store-type: JKS 

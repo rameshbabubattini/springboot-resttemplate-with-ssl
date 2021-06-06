@@ -1,0 +1,9 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-alias: sampleserver
+    key-password: changeit
+    key-store: classpath:sampleserver.keystore
+    key-store-password: changeit
+    key-store-type: PKCS12
