@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/sampleserver")
 public class SampleServerController {
 
-    @GetMapping("/welcome")
-    public ResponseEntity<String> welcome() {
-        return new ResponseEntity<>("Success", HttpStatus.OK);
+    @GetMapping("/message")
+    public ResponseEntity<String> message() {
+        return new ResponseEntity<>("Message from https server.", HttpStatus.OK);
     }
 }

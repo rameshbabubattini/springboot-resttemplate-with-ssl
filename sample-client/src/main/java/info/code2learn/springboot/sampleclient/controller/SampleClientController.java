@@ -21,7 +21,7 @@ public class SampleClientController {
 
 	@GetMapping("/welcome")
 	public ResponseEntity<String> welcome() {
-		ResponseEntity<String> responseEntity = restTemplate.getForEntity(sampleServerUrl + "/sampleserver/welcome", String.class);
+		ResponseEntity<String> responseEntity = restTemplate.getForEntity(sampleServerUrl + "/sampleserver/message", String.class);
 		return new ResponseEntity<>(responseEntity.getBody(), HttpStatus.OK);
 	}
 	
